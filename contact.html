@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Aroma - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">☕ Café Aroma</div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- EN-TÊTE -->
+  <div class="page-header">
+    <h1>Contactez-nous</h1>
+    <p>Nous sommes là pour vous répondre</p>
+  </div>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- FORMULAIRE -->
+      <div class="contact-form">
+        <h2>Envoyez un message</h2>
+
+        <div class="form-group">
+          <label for="nom">Votre nom</label>
+          <input type="text" id="nom" placeholder="Ex: Mohamed Ali" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Votre email</label>
+          <input type="email" id="email" placeholder="exemple@email.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="sujet">Sujet</label>
+          <input type="text" id="sujet" placeholder="Ex: Réservation de table" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Écrivez votre message ici..."></textarea>
+        </div>
+
+        <!-- Bouton d'envoi (JS gère la validation) -->
+        <button class="btn" id="send-btn" onclick="envoyerMessage()">Envoyer ✉️</button>
+
+        <!-- Message de confirmation (caché par défaut) -->
+        <p id="confirmation" class="confirmation-msg" style="display:none;">
+          ✅ Votre message a été envoyé ! Merci.
+        </p>
+      </div>
+
+      <!-- INFOS CONTACT -->
+      <div class="contact-info">
+        <h2>Informations</h2>
+        <div class="info-item">
+          <span>📍</span>
+          <p>12 Rue Hassan II, Casablanca, Maroc</p>
+        </div>
+        <div class="info-item">
+          <span>📞</span>
+          <p>+212 600-000-000</p>
+        </div>
+        <div class="info-item">
+          <span>📧</span>
+          <p>contact@cafearoma.ma</p>
+        </div>
+        <div class="info-item">
+          <span>🕐</span>
+          <p>Lun – Sam : 07h00 – 22h00</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Café Aroma — Tous droits réservés</p>
+    <p>📍 12 Rue Hassan II, Casablanca | 📞 +212 600-000-000</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
