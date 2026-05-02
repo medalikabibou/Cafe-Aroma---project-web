@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Aroma - Accueil</title>
+  <!-- Lien vers la feuille de style -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Police Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">☕ Café Aroma</div>
+    <!-- Bouton hamburger pour mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <!-- Image en arrière-plan -->
+    <img src="img/Caffé.jpg" alt="Intérieur chaleureux de Café Aroma" class="hero-bg-img" />
+    <!-- Overlay sombre pour la lisibilité du texte -->
+    <div class="hero-overlay"></div>
+    <!-- Contenu textuel par-dessus -->
+    <div class="hero-content">
+      <p class="hero-sub">Bienvenue chez</p>
+      <h1>Café Aroma</h1>
+      <p class="hero-desc">Un endroit chaleureux pour savourer un bon café et passer un moment agréable.</p>
+      <a href="menu.html" class="btn">Voir le menu</a>
+    </div>
+  </section>
+
+  <!-- ===== SECTION POINTS FORTS ===== -->
+  <section class="features">
+    <h2 class="section-title">Pourquoi nous choisir ?</h2>
+    <div class="features-grid">
+      <div class="card">
+        <span class="icon">🌿</span>
+        <h3>Ingrédients frais</h3>
+        <p>Nous utilisons uniquement des produits frais et locaux pour nos préparations.</p>
+      </div>
+      <div class="card">
+        <span class="icon">☕</span>
+        <h3>Café de qualité</h3>
+        <p>Nos grains de café sont sélectionnés avec soin auprès de producteurs responsables.</p>
+      </div>
+      <div class="card">
+        <span class="icon">🏠</span>
+        <h3>Ambiance cosy</h3>
+        <p>Un cadre chaleureux et décoré avec goût pour vous faire sentir comme chez vous.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION CITATION ===== -->
+  <section class="quote-section">
+    <blockquote>
+      "Un café bien servi, c'est une conversation qui commence."
+    </blockquote>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 Café Aroma — Tous droits réservés</p>
+    <p>📍 12 Rue Hassan II, Casablanca | 📞 +212 600-000-000</p>
+  </footer>
+
+  <!-- Lien vers le script JS -->
+  <script src="script.js"></script>
+</body>
+</html>

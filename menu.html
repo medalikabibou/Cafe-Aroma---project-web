@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Aroma - Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">☕ Café Aroma</div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- EN-TÊTE DE PAGE -->
+  <div class="page-header">
+    <h1>Notre Menu</h1>
+    <p>Découvrez nos boissons et pâtisseries faites maison</p>
+  </div>
+
+  <!-- FILTRES PAR CATÉGORIE -->
+  <section class="menu-section">
+    <div class="filter-btns">
+      <button class="filter-btn active" data-cat="all">Tout</button>
+      <button class="filter-btn" data-cat="boissons">Boissons</button>
+      <button class="filter-btn" data-cat="patisseries">Pâtisseries</button>
+      <button class="filter-btn" data-cat="salé">Salé</button>
+    </div>
+
+    <!-- GRILLE DES PRODUITS -->
+    <div class="menu-grid" id="menu-grid">
+
+      <div class="menu-item" data-cat="boissons">
+        <div class="menu-img">☕</div>
+        <div class="menu-info">
+          <h3>Espresso</h3>
+          <p>Un café court et intense, pour bien commencer la journée.</p>
+          <span class="price">15 MAD</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="boissons">
+        <div class="menu-img">🥛</div>
+        <div class="menu-info">
+          <h3>Cappuccino</h3>
+          <p>Espresso, lait chaud et mousse de lait crémeuse.</p>
+          <span class="price">25 MAD</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="boissons">
+        <div class="menu-img">🧋</div>
+        <div class="menu-info">
+          <h3>Café Glacé</h3>
+          <p>Café froid sur glaçons, doux et rafraîchissant.</p>
+          <span class="price">30 MAD</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="patisseries">
+        <div class="menu-img">🥐</div>
+        <div class="menu-info">
+          <h3>Croissant</h3>
+          <p>Feuilleté et doré, préparé chaque matin.</p>
+          <span class="price">18 MAD</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="patisseries">
+        <div class="menu-img">🍰</div>
+        <div class="menu-info">
+          <h3>Gâteau au chocolat</h3>
+          <p>Moelleux et fondant, pour les amateurs de chocolat.</p>
+          <span class="price">35 MAD</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="salé">
+        <div class="menu-img">🥪</div>
+        <div class="menu-info">
+          <h3>Sandwich Club</h3>
+          <p>Poulet grillé, salade, tomates et mayo maison.</p>
+          <span class="price">45 MAD</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="salé">
+        <div class="menu-img">🥗</div>
+        <div class="menu-info">
+          <h3>Salade César</h3>
+          <p>Laitue, parmesan, croûtons et sauce César légère.</p>
+          <span class="price">40 MAD</span>
+        </div>
+      </div>
+
+      <div class="menu-item" data-cat="boissons">
+        <div class="menu-img">🍵</div>
+        <div class="menu-info">
+          <h3>Thé à la menthe</h3>
+          <p>Thé marocain traditionnel, sucré et parfumé.</p>
+          <span class="price">12 MAD</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Café Aroma — Tous droits réservés</p>
+    <p>📍 12 Rue Hassan II, Casablanca | 📞 +212 600-000-000</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
